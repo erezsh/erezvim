@@ -77,11 +77,11 @@ vnoremap < <gv
 vnoremap > >gv
 vnoremap = =gv
 nnoremap <leader>c mz0i#<ESC>`zl
-vnoremap <leader>c :normal \c<CR>
+vnoremap <leader>c :normal <leader>c<CR>
 
 nnoremap <leader>C mz0lF#x`zh
-vnoremap <leader>C :normal \C<CR>
-vnoremap <leader>c :normal \C<CR>gv
+vnoremap <leader>C :normal <leader>C<CR>
+"vnoremap <leader>c :normal \C<CR>gv
 
 " SCRIPTS
 "let vim_script_dir = expand('<sfile>:p:h')
@@ -187,3 +187,10 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 
 " backspace in Visual mode deletes selection
 vnoremap <BS> d
+
+" The C-g u sets an undo point, so this has the effect of letting me type for a while and have undo just revert one sentence at a time, instead of everything I've typed since entering insert mode.
+inoremap . .<C-g>u
+inoremap ! !<C-g>u
+inoremap ? ?<C-g>u
+inoremap : :<C-g>u
+
