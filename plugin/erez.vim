@@ -53,6 +53,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+set iskeyword+=-    " in CSS, a-b is a keyword
+
 "nmap >c mzI#<ESC>`zl
 "vmap >c :normal >c<CR>
 "i<ESC> is like 'h', only no error if can't move
