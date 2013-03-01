@@ -196,3 +196,8 @@ inoremap ! !<C-g>u
 inoremap ? ?<C-g>u
 inoremap : :<C-g>u
 
+
+call pymode#Default("g:pymode_folding", 0)  " overwrite pymode defaults
+call pymode#Default("g:pymode_lint_checker", "pylint")
+
+let g:used_javascript_libs = 'jquery'
