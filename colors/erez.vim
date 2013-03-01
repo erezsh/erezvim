@@ -2,10 +2,9 @@
 " Name Of File: erez.vim.
 " Description: Gvim colorscheme for LCDs, designed against VIM 7.0 GUI
 " By: Erez Shinan
-" Contact: demwiz@gmail.com
+" Contact: erezshin@gmail.com
 " Created: 2007 Jan
-" Last Change: 25/11/10
-" Installation: Drop this file in your $VIMRUNTIME/colors/ directory.
+" Last Change: 3/1/13
 "--------------------------------------------------------------------
 
 
@@ -53,7 +52,7 @@ hi Todo            gui=none       guibg=#000000  guifg=#ff0000
 hi Title           gui=none                      guifg=cyan
 hi StatusLine      gui=none       guibg=darkgreen  guifg=black
 hi StatusLineNC    gui=none       guibg=darkgrey  guifg=black
-hi PreProc         gui=none                      guifg=green
+hi PreProc         gui=none                      guifg=lightcyan
 hi cDefine                                       guifg=darkgreen
 hi cInclude                                      guifg=green
 hi CursorLine                   guibg=#333333
@@ -67,11 +66,12 @@ highlight Visual					cterm=reverse
 highlight Cursor     ctermfg=Black	ctermbg=Green	cterm=bold
 highlight Special    ctermfg=lightmagenta
 highlight Comment    ctermfg=darkgrey
-highlight Statement  ctermfg=lightyellow			cterm=NONE
+highlight Statement  ctermfg=yellow			cterm=NONE
 highlight Type		 ctermfg=darkcyan				cterm=NONE
-highlight Function	 ctermfg=lightblue
-highlight String	 ctermfg=darkgreen
+highlight Function	 ctermfg=brown
+highlight String	 ctermfg=green
 highlight Builtin	 ctermfg=white
+hi PreProc               ctermfg=cyan
 hi CursorLine                   ctermbg=darkblue cterm=None
 
 hi VertSplit       ctermbg=black ctermfg=white
