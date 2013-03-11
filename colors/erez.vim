@@ -52,7 +52,7 @@ hi Todo            gui=none       guibg=#000000  guifg=#ff0000
 hi Title           gui=none                      guifg=cyan
 hi StatusLine      gui=none       guibg=darkgreen  guifg=black
 hi StatusLineNC    gui=none       guibg=darkgrey  guifg=black
-hi PreProc         gui=none                      guifg=lightcyan
+hi PreProc         gui=none                      guifg=lightblue
 hi cDefine                                       guifg=darkgreen
 hi cInclude                                      guifg=green
 hi CursorLine                   guibg=#333333
