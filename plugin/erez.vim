@@ -197,7 +197,8 @@ inoremap ? ?<C-g>u
 inoremap : :<C-g>u
 
 set enc=utf-8
-set guifont=DejaVu_Sans_Mono:h10:b:cANSI
+"set guifont=DejaVu_Sans_Mono:h10:b:cANSI
+set guifont="DejaVu Sans Mono 10"
 
 call pymode#Default("g:pymode_folding", 0)  " overwrite pymode defaults
 call pymode#Default("g:pymode_lint_checker", "pylint")
