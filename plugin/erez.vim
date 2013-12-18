@@ -200,8 +200,13 @@ set enc=utf-8
 "set guifont=DejaVu_Sans_Mono:h10:b:cANSI
 set guifont="DejaVu Sans Mono 10"
 
-call pymode#Default("g:pymode_folding", 0)  " overwrite pymode defaults
-call pymode#Default("g:pymode_lint_checker", "pylint")
+"call pymode#Default("g:pymode_folding", 0)  " overwrite pymode defaults
+let g:pymode_folding = 0
+let g:pymode_lint_checkers = ['pylint']
+"call pymode#Default("g:pymode_lint_checker", "pylint")
+noremap L :PymodeLint<CR>
 
 let g:used_javascript_libs = 'jquery'
 let g:jedi#use_tabs_not_buffers = 0
+
+cmap w!! %!sudo tee > /dev/null %
