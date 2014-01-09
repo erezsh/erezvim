@@ -203,7 +203,8 @@ set guifont="DejaVu Sans Mono 10"
 "call pymode#Default("g:pymode_folding", 0)  " overwrite pymode defaults
 let g:pymode_folding = 0
 let g:pymode_lint_checkers = ['pylint']
-"call pymode#Default("g:pymode_lint_checker", "pylint")
+let g:pymode_lint_ignore = "C0103,C0111,E1101,R0901,R0902,R0903,R0904,R0913,R0915,W0141,W0142,W0221,W0232,W0401,W0613,W0631,C0301,F0401,W0622,R0201"
+
 noremap L :PymodeLint<CR>
 
 let g:used_javascript_libs = 'jquery'
